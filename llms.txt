@@ -1,0 +1,10 @@
+# llm-as-judge
+
+> Agent Skill for designing LLM-as-judge evaluators: binary Yes/No checks collect evidence, the LLM issues one named holistic verdict from a fixed enum, and answers are never aggregated into a score (a satisfaction ratio dilutes a single dominant No).
+
+Key concepts: binary screen, verdict pressure-test (atomic refutation questions, same-question-set re-judge), verdict enums mapped 1:1 to next actions, verification ownership (deterministic checks are code-owned and unconditional, never "verify if it looks stale").
+
+## Docs
+
+- [SKILL.md](skills/llm-as-judge/SKILL.md): full design pattern — principles, pressure-test procedure, scale asymmetry, judge prompt template, JSON output schema, references (BinEval arXiv:2606.27226, CheckEval arXiv:2403.18771, TICK arXiv:2410.03608)
+- [README.md](README.md): install instructions and overview
