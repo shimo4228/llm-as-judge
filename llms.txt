@@ -4,6 +4,8 @@
 
 Key concepts: binary screen, verdict pressure-test (atomic refutation questions, same-question-set re-judge), verdict enums mapped 1:1 to next actions, verification ownership (deterministic checks are code-owned and unconditional, never "verify if it looks stale").
 
+Status: active, synced one way from the author's Claude Code harness (`scripts/sync-from-local.sh`); the same skill also ships in the [akc-cycle](https://github.com/shimo4228/akc-cycle) plugin as `/akc-cycle:llm-as-judge`, so this repository can trail the plugin between syncs.
+
 ## Docs
 
 - [SKILL.md](skills/llm-as-judge/SKILL.md): full design pattern — principles, pressure-test procedure, scale asymmetry, judge prompt template, JSON output schema, references (BinEval arXiv:2606.27226, CheckEval arXiv:2403.18771, TICK arXiv:2410.03608)
